@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,12 +24,12 @@
       <span id="seconds">00</span>
     </section>
     <section id="controls" class="flex">
-      <button class="ph ph-play-circle"><span class="sr-only">Iniciar Contador</span></button>
-      <button class="ph ph-pause-circle"><span class="sr-only">Pausar Contador</span></button>
-      <button class="ph ph-timer secondary"><span class="sr-only">Ajustar Contador</span></button>
-      <button class="ph ph-stop-circle secondary"><span class="sr-only">Reiniciar Contador</span></button>
-      <button class="ph ph-speaker-none secondary"><span class="sr-only">Iniciar Música</span></button>
-      <button class="ph ph-speaker-high"><span class="sr-only">Para Música</span></button>
+      <button data-action="toggleRunning" class="ph ph-play-circle"><span class="sr-only">Iniciar Contador</span></button>
+      <button data-action="toggleRunning" class="ph ph-pause-circle"><span class="sr-only">Pausar Contador</span></button>
+      <button data-action="set" class="ph ph-timer secondary"><span class="sr-only">Ajustar Contador</span></button>
+      <button data-action="reset" class="ph ph-stop-circle secondary"><span class="sr-only">Reiniciar Contador</span></button>
+      <button data-action="toggleMusic" class="ph ph-speaker-none secondary"><span class="sr-only">Iniciar Música</span></button>
+      <button data-action="toggleMusic" class="ph ph-speaker-high"><span class="sr-only">Para Música</span></button>
     </section>
   </div>
 </body>
